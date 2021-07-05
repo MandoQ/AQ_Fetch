@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D53134EB269002720064DEC1 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53134EA269002720064DEC1 /* CoreDataManager.swift */; };
+		D53134ED269121530064DEC1 /* EventDetailsStaticTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53134EC269121530064DEC1 /* EventDetailsStaticTableViewController.swift */; };
 		D5E4DF672683BFB80022D559 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4DF662683BFB80022D559 /* AppDelegate.swift */; };
 		D5E4DF692683BFB80022D559 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4DF682683BFB80022D559 /* SceneDelegate.swift */; };
 		D5E4DF6B2683BFB80022D559 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4DF6A2683BFB80022D559 /* ViewController.swift */; };
@@ -14,9 +16,15 @@
 		D5E4DF712683BFB80022D559 /* AQ_Fetch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D5E4DF6F2683BFB80022D559 /* AQ_Fetch.xcdatamodeld */; };
 		D5E4DF732683BFBE0022D559 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5E4DF722683BFBE0022D559 /* Assets.xcassets */; };
 		D5E4DF762683BFBE0022D559 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5E4DF742683BFBE0022D559 /* LaunchScreen.storyboard */; };
+		D5E4DF822683D22C0022D559 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4DF812683D22C0022D559 /* ApiManager.swift */; };
+		D5E4DF842683EBE30022D559 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4DF832683EBE30022D559 /* Models.swift */; };
+		D5E4DF87268403780022D559 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4DF85268403780022D559 /* EventTableViewCell.swift */; };
+		D5E4DF88268403780022D559 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5E4DF86268403780022D559 /* EventTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D53134EA269002720064DEC1 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		D53134EC269121530064DEC1 /* EventDetailsStaticTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsStaticTableViewController.swift; sourceTree = "<group>"; };
 		D5E4DF632683BFB80022D559 /* AQ_Fetch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AQ_Fetch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5E4DF662683BFB80022D559 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5E4DF682683BFB80022D559 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +34,10 @@
 		D5E4DF722683BFBE0022D559 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5E4DF752683BFBE0022D559 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5E4DF772683BFBE0022D559 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5E4DF812683D22C0022D559 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		D5E4DF832683EBE30022D559 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		D5E4DF85268403780022D559 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		D5E4DF86268403780022D559 /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +51,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D57353D626927CC600EBC96A /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				D5E4DF832683EBE30022D559 /* Models.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		D57353D726927D3E00EBC96A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D5E4DF812683D22C0022D559 /* ApiManager.swift */,
+				D53134EA269002720064DEC1 /* CoreDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		D57353D826927D5600EBC96A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D5E4DF6A2683BFB80022D559 /* ViewController.swift */,
+				D53134EC269121530064DEC1 /* EventDetailsStaticTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D57353D926927D6C00EBC96A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D5E4DF85268403780022D559 /* EventTableViewCell.swift */,
+				D5E4DF86268403780022D559 /* EventTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		D5E4DF5A2683BFB80022D559 = {
 			isa = PBXGroup;
 			children = (
@@ -58,9 +105,12 @@
 		D5E4DF652683BFB80022D559 /* AQ_Fetch */ = {
 			isa = PBXGroup;
 			children = (
+				D57353D826927D5600EBC96A /* View Controllers */,
+				D57353D926927D6C00EBC96A /* Cells */,
+				D57353D626927CC600EBC96A /* Data Model */,
+				D57353D726927D3E00EBC96A /* Managers */,
 				D5E4DF662683BFB80022D559 /* AppDelegate.swift */,
 				D5E4DF682683BFB80022D559 /* SceneDelegate.swift */,
-				D5E4DF6A2683BFB80022D559 /* ViewController.swift */,
 				D5E4DF6C2683BFB80022D559 /* Main.storyboard */,
 				D5E4DF722683BFBE0022D559 /* Assets.xcassets */,
 				D5E4DF742683BFBE0022D559 /* LaunchScreen.storyboard */,
@@ -105,7 +155,7 @@
 				};
 			};
 			buildConfigurationList = D5E4DF5E2683BFB80022D559 /* Build configuration list for PBXProject "AQ_Fetch" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -127,6 +177,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5E4DF88268403780022D559 /* EventTableViewCell.xib in Resources */,
 				D5E4DF762683BFBE0022D559 /* LaunchScreen.storyboard in Resources */,
 				D5E4DF732683BFBE0022D559 /* Assets.xcassets in Resources */,
 				D5E4DF6E2683BFB80022D559 /* Main.storyboard in Resources */,
@@ -140,9 +191,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5E4DF842683EBE30022D559 /* Models.swift in Sources */,
+				D53134ED269121530064DEC1 /* EventDetailsStaticTableViewController.swift in Sources */,
 				D5E4DF712683BFB80022D559 /* AQ_Fetch.xcdatamodeld in Sources */,
 				D5E4DF6B2683BFB80022D559 /* ViewController.swift in Sources */,
 				D5E4DF672683BFB80022D559 /* AppDelegate.swift in Sources */,
+				D5E4DF87268403780022D559 /* EventTableViewCell.swift in Sources */,
+				D53134EB269002720064DEC1 /* CoreDataManager.swift in Sources */,
+				D5E4DF822683D22C0022D559 /* ApiManager.swift in Sources */,
 				D5E4DF692683BFB80022D559 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +349,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 95CAM8SNZG;
 				INFOPLIST_FILE = AQ_Fetch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +357,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "mando.AQ-Fetch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,6 +369,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 95CAM8SNZG;
 				INFOPLIST_FILE = AQ_Fetch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,7 +377,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "mando.AQ-Fetch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
